@@ -31,5 +31,30 @@ const myfun = function(){         // function
     console.log("Hello World");
 }
 
+// console.log(typeof bigNumber);
 
-console.log(typeof bigNumber);
+
+// ****************************************** Memory ***************************************************
+
+// Types :
+// 1. Stack (Primitive)
+// 2. Heap (Non-Primitive)
+
+let myYoutubeChannel = "CodeOnCloud"   //  ------ Stack
+
+let anotherName = myYoutubeChannel
+anotherName = "chaiaurcode"
+
+// console.log(anotherName);
+// console.log(myYoutubeChannel);
+
+let user1 = {
+    email: "aayush@google.com",
+    upi: "user@ybl"
+}
+
+let user2 = user1
+user2.email = "codeoncloud@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
